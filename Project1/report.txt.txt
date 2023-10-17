@@ -1,0 +1,19 @@
+5) When I executed original.cpp, I was asked to input how many voters were surveyed. I typed in 100. Next I was asked how many 
+would vote for Gavin. I inputed 125. Lastly, the program asked how many voted for Brian. I put in 250. The program outputed
+the data of the election. 125% of the votes would go to Gavin, 250% would go to Brian and Brian will be the predicted winner.
+This is unusual and nonsensical outputs as how could Gavin and Brian have votes that go beyond the amount of voters surveyed.
+Also the percentages of voters are nonsensical as well. Both go above 100% which does not make sense.
+
+6) In logic_error.cpp, the logic error is that depsite inputing that Gavin will get 25 votes and Brian will get 75 votes out
+of the total 100 votes, the output will say that Gavin is the projected winner. This is because I incorrectly flipped the 
+sign in the if statement so that it looked like this if(forGavin < forBrian); instead of if(forGavin > forBrian);. 
+This error still allows the program to pass the compiler, but the intended outcome of the program was not achieved as it 
+incorrectly named the predicted winner. 
+
+
+7) In compile_error.cpp, the first compile error I put into the code was flipping the sign after a cin. It looked like this:
+cin << numberSurveyed; instead of cin >> numberSurveyed;. The second compile error I put in was not capitlizing the b in the 
+int forBrian. It looked like this: cin >> forbrian; instead of cin >> forBrian;. Both these errors prevented the code from 
+passing through the compiler. The error messeges in the compiler described both errors. It said that identifier "forbrian"
+was undefined which makes sense since it should be forBrian. The second messege said that no operator "<<"" matches the
+operands which makes sense since it should be >>.
